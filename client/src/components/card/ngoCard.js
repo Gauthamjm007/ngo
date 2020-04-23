@@ -77,12 +77,14 @@ export default function NgoCard(props) {
             <Button color="primary">Foreign Funding</Button>
             <Button
               variant={props.f_funding ? "contained" : ""}
+              style={{ color: props.f_funding ? "white" : "black" }}
               color="primary"
             >
               YES
             </Button>
             <Button
               variant={props.f_funding ? "" : "contained"}
+              style={{ color: props.f_funding ? "black" : "white" }}
               color="primary"
             >
               NO

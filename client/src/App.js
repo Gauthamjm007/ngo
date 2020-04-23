@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import NgoMain from "./components/card/ngoMain";
+import NgoDetails from "./components/card/ngoDetails";
 import Topbar from "./components/navBar/navBar";
 import ThemeProvider from "./components/theme";
 import ThemeContext from "./components/theme/ThemeContext";
@@ -14,7 +14,7 @@ function App() {
         <ThemeProvider>
           <Topbar />
           <BrowserRouter>
-            <Route path="/" component={NgoMain} exact={true} />
+            <Route path="/" component={NgoDetails} exact={true} />
             <Route path="/ngo/edit/:id" component={EditNgo} exact={true} />
           </BrowserRouter>
         </ThemeProvider>

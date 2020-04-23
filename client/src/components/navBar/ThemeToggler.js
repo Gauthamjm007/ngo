@@ -47,8 +47,3 @@ export default function ThemeToggler({ className }) {
     </div>
   );
 }
-
-ThemeToggler.propTypes = {
-  //style of string
-  className: PropTypes.string,
-};
