@@ -127,34 +127,34 @@ twitter-tweets
 
 ## Dependencies
 
-concurrently >=3.6.0
-express >= 4.16.3,
-loadash: "^1.0.0",
-mongoose: "^5.9.10",
-validator: "^13.0.0",
-@date-io/moment: ^1.3.13,
-@material-ui/core: ^4.9.11,
-@material-ui/icons: ^4.9.1,
-@material-ui/lab: ^4.0.0-alpha.50,
-@material-ui/pickers: ^3.2.10,
-@testing-library/jest-dom: ^4.2.4,
-@testing-library/react: ^9.5.0,
-@testing-library/user-event: ^7.2.1,
-axios: ^0.19.2,
-formik: ^2.1.4,
-formik-material-ui: ^2.0.0-beta.1,
-formik-material-ui-pickers: 0.0.8,
-loadash: ^1.0.0,
-moment: ^2.24.0,
-react: ^16.13.1,
-react-dom: ^16.13.1,
-react-redux: ^7.2.0,
-react-router-dom: ^5.1.2,
-react-scripts: 3.4.1,
-redux: ^4.0.5,
-redux-thunk: ^2.3.0,
-styled-components: ^5.1.0,
-sweetalert2: ^9.10.12,
+concurrently >=3.6.0<br/>
+express >= 4.16.3,<br/>
+loadash: "^1.0.0",<br/>
+mongoose: "^5.9.10",<br/>
+validator: "^13.0.0",<br/>
+@date-io/moment: ^1.3.13,<br/>
+@material-ui/core: ^4.9.11,<br/>
+@material-ui/icons: ^4.9.1,<br/>
+@material-ui/lab: ^4.0.0-alpha.50,<br/>
+@material-ui/pickers: ^3.2.10,<br/>
+@testing-library/jest-dom: ^4.2.4,<br/>
+@testing-library/react: ^9.5.0,<br/>
+@testing-library/user-event: ^7.2.1,<br/>
+axios: ^0.19.2,<br/>
+formik: ^2.1.4,<br/>
+formik-material-ui: ^2.0.0-beta.1,<br/>
+formik-material-ui-pickers: 0.0.8,<br/>
+loadash: ^1.0.0,<br/>
+moment: ^2.24.0,<br/>
+react: ^16.13.1,<br/>
+react-dom: ^16.13.1,<br/>
+react-redux: ^7.2.0,<br/>
+react-router-dom: ^5.1.2,<br/>
+react-scripts: 3.4.1,<br/>
+redux: ^4.0.5,<br/>
+redux-thunk: ^2.3.0,<br/>
+styled-components: ^5.1.0,<br/>
+sweetalert2: ^9.10.12,<br/>
 
 ## Installation
 
