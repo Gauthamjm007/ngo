@@ -209,7 +209,7 @@ class NgoDetails extends Component {
                       f_funding={ngo.f_funding}
                       claimed={ngo.claimed}
                       handleClick={() => this.handleClick(ngo._id)}
-                    ></NgoCard>{" "}
+                    ></NgoCard>
                   </Grid>
                 );
               })}

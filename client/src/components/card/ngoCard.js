@@ -89,19 +89,19 @@ export default function NgoCard(props) {
             </Button>
           </ButtonGroup>
           {!Boolean(props.claimed) ? (
-            <Button
-              size="small"
-              color="primary"
-              variant="contained"
-              style={{ color: "white" }}
+            <Link
+              to={`/ngo/edit/${props._id}`}
+              style={{ textDecoration: "none", color: "white" }}
             >
-              <Link
-                to={`/ngo/edit/${props._id}`}
-                style={{ textDecoration: "none", color: "white" }}
+              <Button
+                size="small"
+                color="primary"
+                variant="contained"
+                style={{ color: "white" }}
               >
                 Claim
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           ) : (
             <Button
               size="small"

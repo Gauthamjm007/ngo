@@ -14,7 +14,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import { connect } from "react-redux";
 import moment from "moment";
 import { startNgoEdit } from "../../actions/ngo";
-
+import { Link } from "react-router-dom";
 const ChoiceTitle = styled.h3`
   font-family: Oswald;
   font-style: normal;
@@ -224,6 +224,11 @@ function EditNgo(props) {
                       >
                         Submit
                       </Button>
+                      <Link to="/" style={{ textDecoration: "none" }}>
+                        <Button variant="contained" color="primary">
+                          Back
+                        </Button>
+                      </Link>
                     </Grid>
                   </Grid>
                 </Grid>
