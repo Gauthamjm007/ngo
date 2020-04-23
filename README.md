@@ -11,7 +11,6 @@ A MERN stack application built to filter ,sort NGO and also to claim the NGO
   - [Introduction](#introduction)
     - [Problem Statement](#problem-statement)
     - [Overview of the solution](#overview-of-the-solution)
-    - [Challenges](#challenges)
   - [Important Folders and Files](#important-folders-and-files)
   - [Dependencies](#dependencies)
   - [Installation](#installation)
@@ -47,18 +46,6 @@ A MERN stack application built to filter ,sort NGO and also to claim the NGO
 1. Building the backend for storing the data and CRUD operations for the NGO datas<br/>
 
 2.Building front end with React,Redux for state management and formik <br/>
-
-### Challenges
-
-- Validating all the users information<br/>
-- Filtering Information based on diffrent criteria <br/>
-  -Design a good view for the used to interact with <br/>
-
-reference : https://javascriptstore.com/2018/03/18/stream-tweets-with-react-express-socket-io-and-twitter/<br/>
-
-- Making the view to be like twitter and Generate markup for a Tweet or Follow button
-  Generate markup for an embedded Tweet or timeline
-  Create an Embedded Search Timeline <br/>
 
 ## Important Folders and Files
 
