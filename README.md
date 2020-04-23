@@ -15,7 +15,6 @@ A MERN stack application built to filter ,sort NGO and also to claim the NGO
   - [Important Folders and Files](#important-folders-and-files)
   - [Dependencies](#dependencies)
   - [Installation](#installation)
-  - [Limitations](#Limitations)
   - [Author](#author)
 
 ## Introduction
