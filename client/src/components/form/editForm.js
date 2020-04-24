@@ -15,6 +15,7 @@ import { connect } from "react-redux";
 import moment from "moment";
 import { startNgoEdit } from "../../actions/ngo";
 import { Link } from "react-router-dom";
+
 const ChoiceTitle = styled.h3`
   font-family: Oswald;
   font-style: normal;
@@ -80,8 +81,19 @@ function EditNgo(props) {
                 props.dispatch(startNgoEdit(data, id, redirect));
               }, 500);
             }}
+            validate={(values) => {
+              const errors = {};
+              if (!values.email) {
+                errors.email = "Required";
+              } else if (
+                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
+              ) {
+                errors.email = "Invalid email address";
+              }
+              return errors;
+            }}
           >
-            {({ submitForm, isSubmitting }) => (
+            {({ submitForm, isSubmitting, values, touched, errors }) => (
               <Form>
                 <Grid container spacing={3} justify="center">
                   <Grid item xs={12}>
@@ -90,6 +102,9 @@ function EditNgo(props) {
                         component={TextField}
                         name="name"
                         type="text"
+                        inputProps={{
+                          maxLength: 50,
+                        }}
                         label="Name"
                         style={{ width: "260px" }}
                         variant="outlined"
@@ -110,6 +125,9 @@ function EditNgo(props) {
                         name="email"
                         type="text"
                         label="Email"
+                        inputProps={{
+                          maxLength: 30,
+                        }}
                         style={{ width: "260px" }}
                         variant="outlined"
                         InputProps={{
@@ -155,6 +173,9 @@ function EditNgo(props) {
                         type="text"
                         label="Line 1 Address"
                         name="line1"
+                        inputProps={{
+                          maxLength: 50,
+                        }}
                         variant="outlined"
                         style={{ width: "260px" }}
                       />
@@ -163,6 +184,9 @@ function EditNgo(props) {
                         type="text"
                         label="Line 2 Address"
                         name="line2"
+                        inputProps={{
+                          maxLength: 50,
+                        }}
                         variant="outlined"
                         style={{ width: "260px" }}
                       />
@@ -171,6 +195,9 @@ function EditNgo(props) {
                         type="text"
                         label="City"
                         name="city"
+                        inputProps={{
+                          maxLength: 30,
+                        }}
                         variant="outlined"
                         style={{ width: "260px" }}
                       />
@@ -179,6 +206,9 @@ function EditNgo(props) {
                         type="text"
                         label="District"
                         name="district"
+                        inputProps={{
+                          maxLength: 30,
+                        }}
                         variant="outlined"
                         style={{ width: "260px" }}
                       />
@@ -186,6 +216,9 @@ function EditNgo(props) {
                         component={TextField}
                         type="text"
                         label="State"
+                        inputProps={{
+                          maxLength: 30,
+                        }}
                         name="state"
                         variant="outlined"
                         style={{ width: "260px" }}
@@ -195,6 +228,9 @@ function EditNgo(props) {
                         type="text"
                         label="Pincode"
                         name="pincode"
+                        inputProps={{
+                          maxLength: 6,
+                        }}
                         variant="outlined"
                         style={{ width: "260px" }}
                       />

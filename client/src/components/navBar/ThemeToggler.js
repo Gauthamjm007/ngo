@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import ThemeContext from "../theme/ThemeContext";
 import Switch from "@material-ui/core/Switch";
 import WbSunnyIcon from "@material-ui/icons/WbSunny";
@@ -7,9 +6,6 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import NightsStayIcon from "@material-ui/icons/NightsStay";
 
-/**
- * This component is a theme toggler to set light or dark
- */
 export default function ThemeToggler({ className }) {
   const [state, setState] = React.useState({
     checkedA: true,
