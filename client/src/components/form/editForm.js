@@ -257,6 +257,19 @@ function EditNgo(props) {
                         color="primary"
                         disabled={isSubmitting}
                         onClick={submitForm}
+                        disabled={
+                          values.name.length !== 0 &&
+                          values.reg_date.length !== 0 &&
+                          values.email.length !== 0 &&
+                          values.line1.length !== 0 &&
+                          values.line2.length !== 0 &&
+                          values.city.length !== 0 &&
+                          values.district.length !== 0 &&
+                          values.state.length !== 0 &&
+                          values.pincode.length !== 0
+                            ? false
+                            : true
+                        }
                       >
                         Submit
                       </Button>
